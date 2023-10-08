@@ -5,21 +5,21 @@
 class GoArchiveIt < Formula
   desc "A lightweight archive management utility, written in Go."
   homepage "https://github.com/korbexmachina/go-archive-it/"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.9/go-archive-it_Darwin_x86_64.tar.gz"
-      sha256 "f80303dbb49d44b927942a2d79e60f6ff726738c852469a9e2c5ddc5032c7ff2"
+      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.10/go-archive-it_Darwin_x86_64.tar.gz"
+      sha256 "56bc3e9591f33433c845fd9702019dfbe5543c40a3965191471166c73d8e4787"
 
       def install
         bin.install "go-archive-it"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.9/go-archive-it_Darwin_arm64.tar.gz"
-      sha256 "3fbb5c4c2845852b3bf64f889fe4a8b85779fed8c500c41bebf8d7c756df430d"
+      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.10/go-archive-it_Darwin_arm64.tar.gz"
+      sha256 "70de4af88ec61e7f3f53ed9e354dfd0673a249705fdcbaff97ca24b2d9c00250"
 
       def install
         bin.install "go-archive-it"
@@ -29,16 +29,16 @@ class GoArchiveIt < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.9/go-archive-it_Linux_arm64.tar.gz"
-      sha256 "bd483467d84e537a883f14ef17c008a8cf2ff93776fc5ddb6ac349b2b648286e"
+      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.10/go-archive-it_Linux_arm64.tar.gz"
+      sha256 "d6854ca66e3a9c531fe640dfcc63d48cdf523e12ae783ceb8b4225336b45166a"
 
       def install
         bin.install "go-archive-it"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.9/go-archive-it_Linux_x86_64.tar.gz"
-      sha256 "908303b4ec729c037e2300a73214118b8ae913d59e5dbb305039be3ced70a326"
+      url "https://github.com/korbexmachina/go-archive-it/releases/download/v0.0.10/go-archive-it_Linux_x86_64.tar.gz"
+      sha256 "cfed50e7683a4bcd8f1f74ea13dd0123737e2656a66cdfe5e13589ac21909811"
 
       def install
         bin.install "go-archive-it"
