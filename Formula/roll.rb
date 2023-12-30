@@ -5,21 +5,21 @@
 class Roll < Formula
   desc "Roll some dice in the terminal!"
   homepage "https://github.com/korbexmachina/roll/"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/korbexmachina/roll/releases/download/v0.0.2/roll_Darwin_x86_64.tar.gz"
-      sha256 "0a371da476ed9adb1199a4497fce8dc7c5cfdee66679c938a9d8f55e60777dfa"
+      url "https://github.com/korbexmachina/roll/releases/download/v0.0.3/roll_Darwin_x86_64.tar.gz"
+      sha256 "69ebd5d78b0a9febab9dc857cc2afafb2e957f943bb8b3e9992c2bae9c1327a9"
 
       def install
         bin.install "roll"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/korbexmachina/roll/releases/download/v0.0.2/roll_Darwin_arm64.tar.gz"
-      sha256 "0abb043cda864e6125392b0283795b348632393c159b16b6d928d620c2f4daaf"
+      url "https://github.com/korbexmachina/roll/releases/download/v0.0.3/roll_Darwin_arm64.tar.gz"
+      sha256 "4770541f12e857cb5eeaf78821f321fa8850ecc575feb61b48e5adaebb732a86"
 
       def install
         bin.install "roll"
@@ -29,16 +29,16 @@ class Roll < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/korbexmachina/roll/releases/download/v0.0.2/roll_Linux_x86_64.tar.gz"
-      sha256 "945b174cd997d69b39d96971ac6053c0e8b3bcf8380c6bbea287248e2b841914"
+      url "https://github.com/korbexmachina/roll/releases/download/v0.0.3/roll_Linux_x86_64.tar.gz"
+      sha256 "9fcd8fb66b1b07aeb3cffcea034c4ba76b50fd0cf1232173dc80941adc39fe32"
 
       def install
         bin.install "roll"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/korbexmachina/roll/releases/download/v0.0.2/roll_Linux_arm64.tar.gz"
-      sha256 "9010bcbfaa82140f03f16475c1ecf8fb47d56c09e35a2563a2bd816d6ecce62f"
+      url "https://github.com/korbexmachina/roll/releases/download/v0.0.3/roll_Linux_arm64.tar.gz"
+      sha256 "ec3d0326e190ab9b6e3fdaacddad34b3d37feca5577174a25871ea400dac565c"
 
       def install
         bin.install "roll"
